@@ -4,13 +4,13 @@ export const Login: React.FC = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 w-full min-h-screen">
       <div className="bg-white px-[t6px] py-[t10px] border-b md:border-b-0 md:border-r border-[#181042] flex flex-col items-center justify-center">
-        <img className="" src="src/assets/images/Logo.png" alt="logo" />
+        <img className="" src="/images/Logo.png" alt="logo" />
       </div>
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <div className="flex items-center gap-2 pb-2">
           <img
             className="h-20 w-20"
-            src="src/assets/images/LogoSmall.png"
+            src="images/LogoSmall.png"
             alt="logo"
           />
           <h1 className="h4 font-bold relative -top-[t1px]">Hosting4Harry</h1>
