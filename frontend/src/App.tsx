@@ -1,10 +1,14 @@
 import "./App.css";
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Login } from "./pages/Login";
 function App() {
   return (
-    <section className="flex bg-[#222222] w-full h-full">
-      <span className="font-medium text-sm text-white">working tailwind</span>
-    </section>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 
