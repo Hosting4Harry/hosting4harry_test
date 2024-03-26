@@ -1,16 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
-import Login from './pages/Login/index';
-import Protected from './pages/Login';
+import "./App.css";
 
-const App: React.FC = () => {
+function App() {
   return (
-    <Router>
-      <Route exact path="/login" component={Login} />
-      <Route exact path="/protected" component={Protected} />
-      <Redirect from="/" to="/login" />
-    </Router>
+    <section className="flex bg-[#222222] w-full h-full">
+      <span className="font-medium text-sm text-white">working tailwind</span>
+    </section>
   );
-};
+}
 
 export default App;
