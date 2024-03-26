@@ -6,17 +6,17 @@ export const Login: React.FC = () => {
       <div className="bg-white px-[t6px] py-[t10px] border-b md:border-b-0 md:border-r border-[#181042] flex flex-col items-center justify-center">
         <img className="" src="/images/Logo.png" alt="logo" />
       </div>
-      <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <div className="flex items-center gap-2 pb-2">
-          <img
-            className="h-20 w-20"
-            src="images/LogoSmall.png"
-            alt="logo"
-          />
-          <h1 className="h4 font-bold relative -top-[t1px]">Hosting4Harry</h1>
-        </div>
-        <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+      <div className="flex flex-col items-center justify-center px-6 py-8 md:h-screen lg:py-0">
+        <div className="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 ">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
+            <span className="flex justify-center">
+              <img
+                className="h-20 w-20"
+                src="images/LogoSmall.png"
+                alt="logo"
+              />
+              {/* <h1 className="h4 font-bold relative -top-[t1px]">Hosting4Harry</h1> */}
+            </span>
             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
               Sign in to your account
             </h1>
@@ -82,7 +82,7 @@ export const Login: React.FC = () => {
               </div>
               <button
                 type="submit"
-                className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                className="w-full text-white bg-indigo-500 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-indigo-500 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
               >
                 Sign in
               </button>
