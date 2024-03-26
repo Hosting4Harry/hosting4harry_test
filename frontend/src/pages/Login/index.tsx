@@ -8,15 +8,11 @@ export const Login: React.FC = () => {
       </div>
       <div className="flex flex-col items-center justify-center px-6 py-8 md:h-screen lg:py-0">
         <div className="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 ">
+          <div className="flex items-center justify-center gap-2 pb-2">
+            <img className="h-20 w-20" src="images/LogoSmall.png" alt="logo" />
+            <h1 className="h4 font-bold relative -top-[t1px]">Hosting4Harry</h1>
+          </div>
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-            <span className="flex justify-center">
-              <img
-                className="h-20 w-20"
-                src="images/LogoSmall.png"
-                alt="logo"
-              />
-              {/* <h1 className="h4 font-bold relative -top-[t1px]">Hosting4Harry</h1> */}
-            </span>
             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
               Sign in to your account
             </h1>
