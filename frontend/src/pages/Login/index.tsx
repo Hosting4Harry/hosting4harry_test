@@ -1,6 +1,8 @@
 import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 
 export const Login: React.FC = () => {
+  const { loginWithRedirect } = useAuth0();
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 w-full min-h-screen">
       <div className="bg-white px-[t6px] py-[t10px] border-b md:border-b-0 md:border-r border-[#181042] flex flex-col items-center justify-center">
@@ -90,6 +92,15 @@ export const Login: React.FC = () => {
                 >
                   Sign up
                 </a>
+              </p>
+              <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                SignUp with Auth{" "}
+                <span
+                  className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                  onClick={() => loginWithRedirect()}
+                >
+                  Auth by Okta
+                </span>
               </p>
             </form>
           </div>
