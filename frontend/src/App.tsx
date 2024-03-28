@@ -1,15 +1,9 @@
+import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Login } from "./pages/Login";
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </Router>
-  );
-}
+import RouterComponent from "./routes";
+
+const App: React.FC = () => {
+  return <RouterComponent />;
+};
 
 export default App;
