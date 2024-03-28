@@ -36,16 +36,16 @@ export const TopPanel: React.FC = () => {
               </span>
             </a>
             <h1 className="mt-8 text-wrap text-4xl md:text-5xl font-semibold text-gray-950 dark:text-white xl:text-5xl xl:[line-height:1.125]">
-              Tame the Wild West <br className="hidden sm:block" /> of Frontend
+              Tame the Wild West <br className="hidden sm:block" /> of Web
               Development
             </h1>
-            <p className="text-wrap mx-auto mt-8 max-w-2xl text-lg text-gray-700 dark:text-gray-300 hidden sm:block">
+            <p className="text-wrap mx-auto mt-6 max-w-2xl text-gray-700 dark:text-gray-300 hidden sm:block">
+              React is a highly customizable components for building modern
+              websites and applications, with your personnal spark.
+            </p>
+            <p className="text-wrap mx-auto mt-8 max-w-2xl text-lg text-gray-700 dark:text-gray-300  sm:hidden">
               Tailwindcss highly customizable components for building modern
               websites and applications that look and feel the way you mean it.
-            </p>
-            <p className="text-wrap mx-auto mt-6 max-w-2xl text-gray-700 dark:text-gray-300 sm:hidden">
-              Highly customizable components for building modern websites and
-              applications, with your personnal spark.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4">
               <div className="p-1 rounded-3xl bg-gray-950/5 border dark:border-white/10 dark:bg-white/5">
