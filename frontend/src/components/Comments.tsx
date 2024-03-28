@@ -2,7 +2,7 @@ import React from "react";
 
 export const Comments: React.FC = () => {
   return (
-    <section>
+    <section id="commentId">
       <div className="py-36">
         <div className="mx-auto px-6 max-w-6xl text-gray-500">
           <div className="text-center">

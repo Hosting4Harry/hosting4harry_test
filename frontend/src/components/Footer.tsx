@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="rounded-xl border border-[#A8A8AB] ">
+    <footer id="footerId" className="rounded-xl border border-[#A8A8AB] ">
       <div className="max-w-6xl mx-auto space-y-16 px-6 py-8 text-gray-600 2xl:px-0">
         <div className="flex flex-wrap items-center justify-between gap-4 border-b pb-8 border-[#A8A8AB]">
           <a href="/" aria-label=" logo" className="flex items-center gap-1">
@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
               href="https://github.com/tailus-ui"
               target="blank"
               aria-label="github"
-              className="size-8 flex *:m-auto rounded text-gray-600 hover:text-blue-600 "
+              className="size-8 flex *:m-auto rounded text-gray-600 hover:text-blue-600"
             >
               <svg
                 className="size-5"
