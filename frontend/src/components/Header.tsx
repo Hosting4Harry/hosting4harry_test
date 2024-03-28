@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
             <div className="absolute top-[0px] left-[0px] w-full h-full bg-white z-0 inline-block md:hidden" />
             <ul className="flex flex-col md:flex-row text-naro-600 md:text-white font-medium z-10 gap-[16px] md:gap-[0px]">
               <li className="mr-4">
-                <a href="/dashboard">Account</a>
+                <a href="/">Account</a>
               </li>
             </ul>
             {isAuthenticated ? (
