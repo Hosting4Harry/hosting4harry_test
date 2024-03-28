@@ -93,6 +93,62 @@ export const TopPanel: React.FC = () => {
               </button>
             </div>
           </div>
+          {/* -------------------------------------------------------------------- */}
+          <div className="-mx-6 relative mt-8 sm:mt-12 max-w-xl sm:mx-auto">
+            <div className="absolute inset-0 -top-8 left-1/2 -z-20 h-56 w-full -translate-x-1/2 dark:opacity-10 [background-image:linear-gradient(to_bottom,transparent_98%,theme(colors.gray.200/75%)_98%),linear-gradient(to_right,transparent_94%,_theme(colors.gray.200/75%)_94%)] [background-size:16px_35px] [mask:radial-gradient(black,transparent_95%)]"></div>
+            <div className="absolute top-12 inset-x-0 w-2/3 h-1/3 -z-[1] rounded-full bg-primary-300 dark:bg-white/10 mx-auto blur-3xl"></div>
+
+            <div className="swiper proofSlides pb-6">
+              <div className="swiper-wrapper">
+                <div className="px-6 pt-2 pb-12 swiper-slide">
+                  <div className="bg-white shadow-xl shadow-gray-950/5 p-3 rounded-2xl border-gray-200 relative border-[length:var(--border-width)] [--anchor:100] [--border-radius:calc(var(--radius)*1px)] [--border-width:calc(var(--border)*1px)] [--border:1] [--glow:60] [--hue:179] [--lightness:55%] dark:[--lightness:14%] [--opacity:1] [--radius:24] [--saturation:78%] dark:[--saturation:97%] [--speed:2]">
+                    <div>
+                      <div className=" w-fit mx-auto">
+                        Work in progress.....
+                      </div>
+                      <p className="mt-6 text-lg text-gray-950 dark:text-white text-center">
+                        30% Increase in revenue
+                      </p>
+                    </div>
+                    <span className="glow absolute inset-[calc(var(--border-width)*-1)] rounded-2xl border-[length:var(--border-width)] border-transparent ![mask-clip:padding-box,_border-box] ![mask-composite:intersect] [mask:linear-gradient(transparent,transparent),linear-gradient(white,white)]">
+                      <span className="absolute inline-block aspect-square h-20 bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] dark:bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0.75),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] opacity-[var(--opacity)] [animation:loop_5s_infinite_linear] [offset-anchor:calc(var(--anchor)*1%)_50%] [offset-path:rect(0_100%_100%_0_round_calc(var(--glow)*1px))]"></span>
+                    </span>
+                  </div>
+                </div>
+                <div className="px-6 pt-2 pb-12 swiper-slide">
+                  <div className="bg-white shadow-xl shadow-gray-950/5 p-3 rounded-2xl border-gray-200 relative border-[length:var(--border-width)] [--anchor:100] [--border-radius:calc(var(--radius)*1px)] [--border-width:calc(var(--border)*1px)] [--border:1] [--glow:60] [--hue:295] [--lightness:63%] [--opacity:1] [--radius:24] [--saturation:100%] [--speed:2]">
+                    <div>
+                      <div className=" w-fit mx-auto">
+                        Work in progress.....
+                      </div>
+                      <p className="mt-6 text-lg text-gray-950 dark:text-white text-center">
+                        30% Increase in revenue
+                      </p>
+                    </div>
+                    <span className="glow absolute inset-[calc(var(--border-width)*-1)] rounded-2xl border-[length:var(--border-width)] border-transparent ![mask-clip:padding-box,_border-box] ![mask-composite:intersect] [mask:linear-gradient(transparent,transparent),linear-gradient(white,white)]">
+                      <span className="absolute inline-block aspect-square h-20 bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] dark:bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0.75),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] opacity-[var(--opacity)] [animation:loop_5s_infinite_linear] [offset-anchor:calc(var(--anchor)*1%)_50%] [offset-path:rect(0_100%_100%_0_round_calc(var(--glow)*1px))]"></span>
+                    </span>
+                  </div>
+                </div>
+                <div className="px-6 pt-2 pb-12 swiper-slide">
+                  <div className="bg-white shadow-xl shadow-accent-950/5 p-3 rounded-2xl border-gray-200 relative border-[length:var(--border-width)] [--anchor:100] [--border-radius:calc(var(--radius)*1px)] [--border-width:calc(var(--border)*1px)] [--border:1] [--glow:60] [--hue:240] [--lightness:67%] [--opacity:1] [--radius:24] [--saturation:84%] [--speed:2]">
+                    <div>
+                      <div className=" w-fit mx-auto">
+                        Work in progress.....
+                      </div>
+                      <p className="mt-6 text-lg text-gray-950 dark:text-white text-center">
+                        30% Increase in revenue
+                      </p>
+                    </div>
+                    <span className="glow absolute inset-[calc(var(--border-width)*-1)] rounded-2xl border-[length:var(--border-width)] border-transparent ![mask-clip:padding-box,_border-box] ![mask-composite:intersect] [mask:linear-gradient(transparent,transparent),linear-gradient(white,white)]">
+                      <span className="absolute inline-block aspect-square h-20 bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] dark:bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0.75),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] opacity-[var(--opacity)] [animation:loop_5s_infinite_linear] [offset-anchor:calc(var(--anchor)*1%)_50%] [offset-path:rect(0_100%_100%_0_round_calc(var(--glow)*1px))]"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="swiper-pagination -mb-3 "></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
