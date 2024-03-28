@@ -68,14 +68,16 @@ export const Header: React.FC = () => {
                       <span>Docs</span>
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="block md:px-4 transition hover:text-primary-600 dark:hover:text-primary-400"
-                    >
-                      <span>Blog</span>
-                    </a>
-                  </li>
+                  {isAuthenticated && (
+                    <li>
+                      <a
+                        href="#"
+                        className="block md:px-4 transition hover:text-primary-600 dark:hover:text-primary-400"
+                      >
+                        <span>Blog</span>
+                      </a>
+                    </li>
+                  )}
                 </ul>
               </div>
 
