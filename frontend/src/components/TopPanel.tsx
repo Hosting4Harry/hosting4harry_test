@@ -2,7 +2,7 @@ import React from "react";
 
 export const TopPanel: React.FC = () => {
   return (
-    <section className="relative sm:pt-[320px]">
+    <section className="relative sm:pt-[200px]">
       <div className="relative pt-24 lg:pt-28">
         <div className="mx-auto px-6 max-w-7xl md:px-12">
           <div className="text-center sm:mx-auto sm:w-10/12 lg:mr-auto lg:mt-0 lg:w-4/5">
