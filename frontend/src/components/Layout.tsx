@@ -8,6 +8,12 @@ export const Layout: React.FC<LayoutProp> = ({ children }) => {
   return (
     <>
       <Header />
+      <div className="absolute inset-0 z-0 w-full h-full">
+        <img
+          src="https://themewagon.github.io/meyawo/assets/imgs/header.jpg"
+          alt="no-img"
+        />
+      </div>
       {children}
       <Footer />
     </>
