@@ -145,7 +145,7 @@ const Hangman = () => {
           </div>
         </div>
       )}
-      <div className="flex flex-col md:flex-row max-w-[850px] bg-white py-[30px] md:py-[60px] px-[15px] md:px-10 items-center rounded-md md:items-end gap-[70px] w-full">
+      <div className="flex flex-col md:flex-row max-w-[850px] bg-white py-[30px] md:py-[30px] px-[15px] md:px-10 items-center rounded-md  gap-[70px] w-full">
         <div className="hangman-box flex flex-col">
           {show && (
             <h1 className="flex gap-2 items-center justify-evenly mb-10 text-green-500 font-semibold text-2xl">
@@ -160,8 +160,9 @@ const Hangman = () => {
             Hangman Game
           </h1>
         </div>
-        <div className="w-full">
-          {!loading && (
+        <div className="flex flex-col w-full h-[580px]">
+         <div className="w-full h-full p-4">
+         {!loading && (
             <>
               <ul className="flex gap-3 list-none items-center justify-center w-full">
                 {question.word
@@ -204,7 +205,7 @@ const Hangman = () => {
                 Question:&nbsp;
                 <span
                   className={`flex font-semibold text-start ${
-                    question.hint.length > 100 ? "text-sm" : ""
+                    question.hint.length > 50 ? "text-sm" : ""
                   }`}
                 >
                   {question.hint}{" "}
@@ -213,11 +214,13 @@ const Hangman = () => {
             </>
           )}
           {loading && (
-            <div className="flex flex-col justify-start items-center gap-2  w-full">
+            <div className="flex flex-col justify-center items-center gap-2  w-full h-full backdrop-blur-sm">
               <Loader />
             </div>
           )}
-          <h4 className="flex flex-col lg:flex-row text-center text-[1.1rem] font-medium mb-[15px] justify-between">
+         </div>
+         <div className="w-full h-full">
+         <h4 className="flex flex-col lg:flex-row text-center text-[1.1rem] font-medium mb-[15px] justify-between">
             <div className="flex items-start justify-start">
               Incorrect guesses:&nbsp;
               <span className="text-[#ff0000]"> {wrong} / 6 </span>
@@ -247,8 +250,8 @@ const Hangman = () => {
           </div>
           <div className="flex flex-wrap gap-2 mt-10 justify-center">
             <button
-              className={`relative w-[60px] p-1 border bg-green-600 hover:bg-green-500 text-white text-base font-semibold outline-none cursor-pointer rounded uppercase ${
-                score < 4 ? "opacity-50 cursor-not-allowed" : ""
+              className={`relative w-[60px] p-1 border bg-green-600  text-white text-base font-semibold outline-none cursor-pointer rounded uppercase ${
+                score < 4 ? "opacity-50 cursor-not-allowed" : "hover:bg-green-500"
               }`}
               onClick={showAnswer}
             >
@@ -282,8 +285,8 @@ const Hangman = () => {
               '
             </button>
             <button
-              className={`relative z-2 w-[60px] p-1 border bg-red-700 hover:bg-red-800 text-white text-base font-semibold outline-none cursor-pointer rounded uppercase ${
-                score < 1 ? "opacity-50 cursor-not-allowed" : ""
+              className={`relative z-2 w-[60px] p-1 border bg-red-700  text-white text-base font-semibold outline-none cursor-pointer rounded uppercase ${
+                score < 1 ? "opacity-50 cursor-not-allowed" : "hover:bg-red-800"
               }`}
               onClick={skip}
             >
@@ -293,6 +296,7 @@ const Hangman = () => {
               </span>
             </button>
           </div>
+         </div>
         </div>
       </div>
     </React.Fragment>

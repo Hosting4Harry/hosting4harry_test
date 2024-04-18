@@ -60,11 +60,11 @@ const RockPaperScissor = () => {
           PP: "Match Draw",
           SS: "Match Draw",
           RP: "Harry Won!!",
-          PR: name + " Won!!",
-          RS: name + " Won!!",
+          PR: name.toUpperCase() + " Won!!",
+          RS: name.toUpperCase() + " Won!!",
           SR: "Harry Won!!",
           PS: "Harry Won!!",
-          SP: name + " Won!!",
+          SP: name.toUpperCase() + " Won!!",
         };
         if (
           outcomes[(userValue + cpuValue) as keyof Outcomes] !== "Match Draw"
@@ -84,10 +84,10 @@ const RockPaperScissor = () => {
       }, 2500);
     }
   };
-  const handleChange = (e:ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);
   };
-  const handleCheck = (e:ChangeEvent<HTMLInputElement>) => {
+  const handleCheck = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.value.toLowerCase() === "harry") {
       alert("Name already taken please enter another!!");
       setName("");
@@ -95,22 +95,23 @@ const RockPaperScissor = () => {
   };
   return (
     <section className="container bg-white py-8 px-[7rem] rounded shadow-xl md:max-w-[700px]">
-      <div className="flex items-center justify-center m-10 border-2 bottom-2 rounded gap-2">
-        <label htmlFor="name" className="font-bold ">
+      <div className="flex flex-wrap items-center justify-evenly border-2 bottom-2 rounded gap-1 w-full mb-5">
+        <label htmlFor="name" className="font-bold text-xs lg:text-sm pt-2 ">
           Player&apos;s name:
         </label>
         <input
           id="name"
-          className="flex items-center judtify-center p-1 m-2 rounded outline-none border border-indigo-600 "
+          className="flex items-center justify-center p-1 m-2 rounded outline-none border border-indigo-600 w-full"
           type="text"
           value={name}
           name="name"
           onChange={handleChange}
           onBlur={handleCheck}
+          placeholder="Player's Name"
         />
       </div>
       <div
-        className={`result_field ${name === "" ? "opacity-50" : "opacity-100"}`}
+        className={`result_field ${name === "" ? "opacity-50" : "opacity-100"} flex flex-col gap-2`}
         onClick={handleBodyClick}
       >
         {name && (
@@ -166,7 +167,7 @@ const RockPaperScissor = () => {
           } transition-opacity duration-300 ease-in cursor-pointer`}
           onClick={(e) => handleClick(e, 0)}
         >
-          <img src="images/rock.svg" className="w-[50px] pointer-events-none" />
+          <img src="images/rock.svg" className="w-[25px] sm:w-[50px] pointer-events-none" />
           <p className="text-[#112342] text-[1.235rem] mt-4 ">Rock</p>
         </span>
         <span
@@ -177,7 +178,7 @@ const RockPaperScissor = () => {
         >
           <img
             src="images/paper.svg"
-            className="w-[50px] pointer-events-none"
+            className="w-[25px] sm:w-[50px] pointer-events-none"
           />
           <p className="text-[#112342] text-[1.235rem] mt-4">Paper</p>
         </span>
@@ -189,7 +190,7 @@ const RockPaperScissor = () => {
         >
           <img
             src="images/scissors.svg"
-            className="w-[50px] pointer-events-none"
+            className="w-[25px] sm:w-[50px] pointer-events-none"
           />
           <p className="text-[#112342] text-[1.235rem] mt-4 ">Scissors</p>
         </span>
