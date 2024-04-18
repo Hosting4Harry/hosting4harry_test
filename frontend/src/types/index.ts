@@ -9,3 +9,8 @@ export type Outcomes = {
     PS: string,
     SP: string,
 }
+export type Question = {
+    word: string,
+    hint: string,
+    category?: string | undefined
+}

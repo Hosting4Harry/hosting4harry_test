@@ -1,6 +1,7 @@
 export const wordList: {
     word: string;
     hint: string;
+    category?: ''
 }[] = [
         {
             word: "guitar",

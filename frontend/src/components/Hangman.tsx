@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import InfoIcon from "./icons/InfoIcon";
+import { wordList } from "../constants";
+import { Question } from "../types/index";
 
 const Hangman = () => {
   const [key, setKey] = useState(0);
@@ -7,12 +9,12 @@ const Hangman = () => {
   const [wrong, setWrong] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [question, setQuestion] = useState({
+  const [question, setQuestion] = useState<Question>({
     word: "",
     hint: "",
     category: "",
   });
-  // wordList[Math.floor(Math.random() * wordList.length)]
+
   const [wordArr, setWordArr] = useState<string[]>([]);
   // Array(question.word.length).fill("")
   const fetchData = async () => {
@@ -24,7 +26,6 @@ const Hangman = () => {
         },
       });
       const data = await response.json();
-      console.log(data);
       const obj = {
         word: data[0].answer,
         hint: data[0].question,
@@ -34,6 +35,11 @@ const Hangman = () => {
       setWordArr(Array(data[0].answer.length).fill(""));
     } catch (error) {
       console.error("Error:", error);
+      const obj: Question =
+        wordList[Math.floor(Math.random() * wordList.length)];
+      obj.category = "";
+      setQuestion(obj);
+      setWordArr(Array(obj?.word?.length).fill(""));
     }
   };
 
@@ -132,13 +138,19 @@ const Hangman = () => {
                   {wordArr[index]}
                 </li>
               ))}
-            <li className="mb-10 w-[28px] text-[2rem] font-semibold text-center uppercase relative group">
+            <li className="mb-10 w-[28px] text-[2rem] font-semibold text-center relative group">
               <div className="relative">
-                <div className="absolute text-black bottom-6 bg-white w-[250px] shadow-2xl right-0 text-sm font-normal not-italic p-2 rounded z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute text-black bottom-6 bg-[#ebe5e5] w-[250px] shadow-2xl right-0 text-sm font-normal not-italic p-2 rounded z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {question?.word?.length % 2 === 0
-                    ? "First letter is" + question.word.split("")[0]
-                    : "Last letter is" +
-                      question.word.split("")[question?.word?.length-1]}
+                    ? "First letter is " +
+                      "'" +
+                      question.word.split("")[0].toUpperCase() +
+                      "'"
+                    : "Last letter is " +
+                      "'" +
+                      question.word
+                        .split("")[question?.word?.length - 1].toUpperCase() +
+                      "'"}
                 </div>
                 <InfoIcon />
               </div>
@@ -147,7 +159,11 @@ const Hangman = () => {
 
           <h4 className="text-[1.1rem] font-medium ">
             Category:{" "}
-            <b>{question.category.toLocaleUpperCase() || "Unknown"}</b>
+            <b>
+              {question.category
+                ? question?.category.toLocaleUpperCase()
+                : "Unknown"}
+            </b>
           </h4>
           <h4 className="flex text-center text-[1.1rem] font-medium mb-[15px]">
             Question:&nbsp;
