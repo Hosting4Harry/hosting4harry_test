@@ -43,7 +43,6 @@ const Hangman = () => {
 
   useEffect(() => {
     if (question?.word === "") return;
-    debugger;
     setImage(wrong);
     if (
       question.word.split("").every((letter) => wordArr.includes(letter)) ||
