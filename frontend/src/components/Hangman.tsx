@@ -233,7 +233,7 @@ const Hangman = () => {
             </div>
           </h4>
           <div className="flex flex-wrap gap-2 mt-10 justify-center">
-            {Array.from("1234567890@#$%&*()abcdefghijklmnopqrstuvwxyz").map(
+            {Array.from("#$%&*123abcde456fghij789klmno(0)pqrstuvwxyz@").map(
               (alphabet, index) => (
                 <button
                   key={index}
