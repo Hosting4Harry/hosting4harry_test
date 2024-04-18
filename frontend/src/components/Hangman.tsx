@@ -103,7 +103,7 @@ const Hangman = () => {
   };
   const playAgain = () => {
     setKey((prev) => prev + 1);
-    updateState();
+    fetchData();
   };
 
   const showAnswer = () => {
