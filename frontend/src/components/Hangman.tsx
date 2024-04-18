@@ -248,7 +248,7 @@ const Hangman = () => {
           <div className="flex flex-wrap gap-2 mt-10 justify-center">
             <button
               className={`relative w-[60px] p-1 border bg-green-600 hover:bg-green-500 text-white text-base font-semibold outline-none cursor-pointer rounded uppercase ${
-                score < 1 ? "opacity-50 cursor-not-allowed" : ""
+                score < 4 ? "opacity-50 cursor-not-allowed" : ""
               }`}
               onClick={showAnswer}
             >
