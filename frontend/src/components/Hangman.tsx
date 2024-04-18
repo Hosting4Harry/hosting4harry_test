@@ -145,7 +145,7 @@ const Hangman = () => {
           </div>
         </div>
       )}
-      <div className="flex flex-col md:flex-row max-w-[850px] bg-white py-[30px] md:py-[60px] px-[15px] md:px-10 items-center rounded-md md:items-end gap-[70px]">
+      <div className="flex flex-col md:flex-row max-w-[850px] bg-white py-[30px] md:py-[60px] px-[15px] md:px-10 items-center rounded-md md:items-end gap-[70px] w-full">
         <div className="hangman-box flex flex-col">
           {show && (
             <h1 className="flex gap-2 items-center justify-evenly mb-10 text-green-500 font-semibold text-2xl">
@@ -233,7 +233,7 @@ const Hangman = () => {
             </div>
           </h4>
           <div className="flex flex-wrap gap-2 mt-10 justify-center">
-            {Array.from("@#$%&*()abcdefghijklmnopqrstuvwxyz").map(
+            {Array.from("1234567890@#$%&*()abcdefghijklmnopqrstuvwxyz").map(
               (alphabet, index) => (
                 <button
                   key={index}
