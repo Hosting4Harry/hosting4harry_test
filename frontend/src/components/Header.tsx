@@ -84,7 +84,7 @@ export const Header: React.FC = () => {
               <div className="w-full space-y-2 gap-2 pt-6 pb-4 lg:pb-0 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] items-center flex flex-col lg:flex-row lg:space-y-0 lg:w-fit lg:border-l lg:border-t-0 lg:pt-0 lg:pl-2">
                 {isAuthenticated ? (
                   <button
-                    className="w-full h-9 lg:w-fit group flex items-center rounded border  border-gray-200  text-gray-900 bg-gray-700 bg-gradient-to-r from-indigo-500 bg-blue-600 hover:bg-gray-900  hover:bg-blue-600  lg:text-sm lg:h-8 px-3.5 justify-center"
+                    className="w-full h-9 lg:w-fit group flex items-center rounded border  border-gray-200  text-gray-900 bg-gray-700 hover:bg-gray-800 bg-gradient-to-r from-indigo-500 hover:from-indigo-600 lg:text-sm lg:h-8 px-3.5 justify-center"
                     onClick={() =>
                       logout({
                         logoutParams: { returnTo: window.location.origin },

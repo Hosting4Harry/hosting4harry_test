@@ -10,7 +10,7 @@ export const TopPanel: React.FC = () => {
               href="#commentId"
               className="border w-fit mx-auto flex justify-between items-center transition duration-200 rounded-3xl border-[rgb(228, 228, 231)] hover:border-[#A8A8AB] dark:border-[rgb(228, 228, 231)] dark:hover:border-[#222222] p-1.5 group gap-3"
             >
-              <span className="block text-sm px-2 py-0.5 rounded text-white bg-gray-900 bg-gradient-to-r from-indigo-500 bg-blue-600">
+              <span className="block text-sm px-2 py-0.5 rounded text-white bg-gray-800 hover:bg-gray-900 bg-gradient-to-r from-indigo-500 hover:from-indigo-600">
                 New
               </span>
               <span className="text-sm font-medium text-gray-700 dark:text-gray-300 flex gap-6">
@@ -51,7 +51,7 @@ export const TopPanel: React.FC = () => {
               <div className="p-1 rounded-3xl bg-gray-950/5 border dark:border-white/10 dark:bg-white/5">
                 <a
                   href="/"
-                  className="flex h-11 items-center justify-center gap-1.5 rounded-3xl border border-blue-600 bg-gray-700 bg-gradient-to-r from-indigo-500 bg-blue-600 hover:bg-gray-900  hover:bg-blue-600 px-4 text-base text-white shadow-md  active:bg-blue-700"
+                  className="flex h-11 items-center justify-center gap-1.5 rounded-3xl border border-blue-600 bg-gray-700 hover:bg-gray-800 bg-gradient-to-r from-indigo-500 hover:from-indigo-600 px-4 text-base text-white shadow-md  active:bg-blue-700"
                 >
                   <svg
                     className="size-5 relative"
